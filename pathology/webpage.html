@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <img src="pr.png" style="width:40%">
+    <h3 class="w3-padding-64"><b>Rohit<br>Pandey</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#patient" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Patients</a> 
+    <a href="profile.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
+
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Help</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Rohit Pandey</span>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Pathology</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Home</b></h1>
+    <hr style="width:50px;border:5px solid rgb(64, 45, 236)" class="w3-round">
+    <img src="pathology.jpg" style="width:50%" onclick="onClick(this)" alt="pathology lab">
+    <a ><b>Pathology (from the Ancient Greek roots of pathos, meaning "experience" or "suffering" and -logia , "study of") is concerned mainly with the causal study of disease.
+
+        The word pathology itself may be used broadly to refer to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices. However, when used in the context of modern medical treatment, the term is often used in a more narrow fashion to refer to processes and tests which fall within the contemporary medical field of "general pathology," an area which includes a number of distinct but inter-related medical specialties that diagnose disease, mostly through analysis of tissue, cell, and body fluid samples. Idiomatically, "a pathology" may also refer to the predicted or actual progression of particular diseases (as in the statement "the many different forms of cancer have diverse pathologies"), and the affix path is sometimes used to indicate a state of disease in cases of both physical ailment (as in cardiomyopathy) and psychological conditions (such as psychopathy).[1] A physician practicing pathology is called a pathologist.</a>
+    </b></div>
+  <!-- patient -->
+  <div class="w3-container" id="patient" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Patient.</b></h1>
+      <hr style="width:50px;border:5px solid rgb(116, 66, 231)" class="w3-round">
+      <p>*Patient ID is MANDATORY</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>ID</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <a href="patient.html"> <button  type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Report</button></a>
+      </form>  
+    </div>
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+ <!-- help -->
+ <div class="w3-container" id="designers" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Help.</b></h1>
+        <hr style="width:50px;border:5px solid rgb(88, 56, 231)" class="w3-round">
+        <p><b>Q. How do I get register in this site?<b></p>
+        <p>A: Send your full details in this mail <u>abc@gmail.com</u>. And get your self verified by your team members.
+        </p>
+        <p><b>Q. How do change your password?</b>
+         <p>A: > Go to Profile > Then my password > change your password</p>
+        </p>
+        <p><b>
+            Q. How do delete my account?</b>
+            <p>
+                <p>
+                > Go to Profile > account > delete account 
+                </p>
+                <p><b>Q: How do I delete and reinstall the app on my iPad® & iPhone®?</b></p>
+                <p>
+                      A:  Tap and hold down the magazine app icon until it starts to shake. Tap the black "X" in the top- left corner, and tap "Delete" in the notification box. Return to the Apple App Store and reinstall the magazine app. If you have already purchased issues, you can re-install them for free: tap "Sign In" in the top right-hand corner and log in using the email address and password you set up from your previous account. Then re-download previously purchased issues.
+
+ 
+                </p>
+      </div>
+    
+      
+    
+    <!-- End page content -->
+    </div>
+    
+  
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+    
+    </body>
+    </html>
+    
